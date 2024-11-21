@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verifikasi Email</title>
+	<link rel="stylesheet" href="otp.css">
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+	<div class="form">
+		<h1>Verifikasi Email</h1>
+		<input type="email" id="email" placeholder="Masukkan Email...">
+		<div class="otpverify">
+			<input type="text" id="otp_inp" placeholder="Masukkan kode OTP...">
+			<button class="btn" id="otp-btn">Verifikasi</button>
+		</div>
+		<button class="btn" onclick="sendOTP()">Kirim Email</button>
+	</div>
+	<script src="otp.js"></script>
+</body>
+</html>
